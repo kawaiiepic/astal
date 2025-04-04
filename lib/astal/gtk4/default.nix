@@ -2,6 +2,7 @@
   mkAstalPkg,
   pkgs,
   self,
+  fetchFromGitHub,
 }:
 mkAstalPkg {
   pname = "astal4";
