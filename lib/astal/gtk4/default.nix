@@ -9,7 +9,7 @@ mkAstalPkg {
   packages = [
     self.packages.${pkgs.system}.io
     pkgs.gtk4
-    pkgs.gtk4-layer-shell.overrideAttrs {
+    (pkgs.gtk4-layer-shell.overrideAttrs {
 version = "1.1.1";
       src = pkgs.fetchFromGitHub {
         owner = "wmww";
@@ -17,7 +17,7 @@ version = "1.1.1";
         rev = "v1.1.1";
         hash = "";
       };
-}
+})
   ];
 
   libname = "astal4";
