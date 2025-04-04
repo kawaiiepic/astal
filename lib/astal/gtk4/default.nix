@@ -13,9 +13,9 @@ mkAstalPkg {
 version = "1.1.1";
       src = pkgs.fetchFromGitHub {
         owner = "wmww";
-        repo = "efibootmgr";
+        repo = "gtk4-layer-shell";
         rev = "v1.1.1";
-        hash = "sha256-XHfErh99UV68oC7gIfg5UIAB2L/X4Dj4EzqKu4QNpBw=";
+        hash = "";
       };
 }
   ];
