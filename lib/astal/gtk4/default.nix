@@ -9,7 +9,15 @@ mkAstalPkg {
   packages = [
     self.packages.${pkgs.system}.io
     pkgs.gtk4
-    pkgs.gtk4-layer-shell
+    pkgs.gtk4-layer-shell.overrideAttrs {
+version = "1.1.1";
+      src = fetchFromGitHub {
+        owner = "wmww";
+        repo = "efibootmgr";
+        rev = "v1.1.1";
+        hash = "sha256-XHfErh99UV68oC7gIfg5UIAB2L/X4Dj4EzqKu4QNpBw=";
+      };
+}
   ];
 
   libname = "astal4";
