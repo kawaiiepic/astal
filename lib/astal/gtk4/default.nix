@@ -15,7 +15,7 @@ version = "1.1.1";
         owner = "wmww";
         repo = "gtk4-layer-shell";
         rev = "v1.1.1";
-        hash = "";
+        hash = "sha256-5TBQKy58o/BdAwfaY2Ss/xcn5kkVFedgiNKfGj7x5gM=";
       };
 })
   ];
